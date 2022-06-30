@@ -14,11 +14,11 @@ jobs:
           fetch-depth: 0
 
       - name: setup_github_token
-        run: ./.github/script/setup-github-token.sh
+        run: ./script/setup-github-token.sh
 
       - name: run_unit_test
         run: |
-          ./.github/script/install-flutter.sh
+          ./script/install-flutter.sh
 
 
 
