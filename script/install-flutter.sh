@@ -2,7 +2,7 @@
 
 set -e
 
-FLUTTER_VERSION="2.8.1"
+FLUTTER_VERSION="3.0.1"
 
 cd
 git clone https://github.com/flutter/flutter.git -b stable || true
