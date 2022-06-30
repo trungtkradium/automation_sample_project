@@ -14,7 +14,9 @@ jobs:
           fetch-depth: 0
 
       - name: setup_github_token
-        run: ./script/setup-github-token.sh
+        run: |
+          git config --global url."https://${{ secrets.GITHUB_TOKEN }}:x-oauth-basic@github.com/".insteadOf git@github.com:
+          git config --global url."https://".insteadOf git://
 
       - name: run_unit_test
         run: |
