@@ -21,6 +21,7 @@ jobs:
       - name: run_unit_test
         run: |
           ./script/install-flutter.sh
+          source $HOME/.zshrc
           ./script/run-unit-test.sh
 
 
