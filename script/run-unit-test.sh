@@ -2,4 +2,4 @@
 
 set -e
 
-fvm flutter test test
+flutter test test
